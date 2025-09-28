@@ -1,0 +1,158 @@
+<html>
+<head>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+main {
+  background: white;
+  font-family: Sans-serif;
+  display: flex;
+  height: 100%;
+  font-size: 14px;
+}
+ol {
+  padding-inline-start: 15px;
+  flex-grow: 1;
+  margin: 10px 0;
+}
+li {
+  font-size: 14px;
+  font-weight: bold;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  color: rgba(0,0,0,0.8);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 20px 0;
+  background: whitesmoke;
+}
+.subtitle {
+  margin-top: 20px;
+}
+.row img {
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -2px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 25px;
+  margin: 0;
+  color: rgba(0,0,0,0.9);
+}
+.tab {
+  align-items: center;
+  text-decoration: none;
+  color: silver;
+}
+.tab-item {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 14px;
+  word-break: break-word;
+}
+nav {
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  flex-shrink: 0;
+  border-right: 1px solid rgba(0,0,100,0.1);
+}
+.canvas {
+  overflow: auto;
+  padding: 40px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  flex-grow: 1;
+}
+.container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  max-width: 1000px;
+  display: grid;
+  margin: 0 auto;
+}
+a:active {
+  border-right: 10px solid black;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  background: #0052D9;
+  color: white;
+  margin: 10px 0;
+  text-align: center;
+}
+.well {
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+.t {
+  color: rgba(0,0,0,0.4);
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<main>
+  <div class='canvas'>
+    <h1>Hunyuan Video</h1>
+    <div class='container'>
+      <div class='row'>
+        <h2>Fastest</h2>
+        <div class='t'>Hunyuan Fast Model + Teacache + Compile</div>
+        <ol>
+          <li>if you want the fastest option (will be lower quality than the original model)</li>
+        </ol>
+        <a class='btn' href="start.js?profile=4&fast=true&compile=true">Start</a>
+      </div>
+      <div class='row'>
+        <h2>Fast</h2>
+        <div class='t'>Hunyuan Fast Model + Teacache</div>
+        <ol>
+          <li>if the Fastest mode fails to compile for some reason</li>
+          <li>if you don't want it to recompile every time you change the prompt</li>
+        </ol>
+        <a class='btn' href="start.js?profile=4&fast=true">Start</a>
+      </div>
+      <div class='row'>
+        <h2>Original Compiled</h2>
+        <div class='t'>Original Hunyuan Video Model, with compilation</div>
+        <ol>
+          <li>If you want high quality results</li>
+          <li>If you are OK with slower generation</li>
+        </ol>
+        <a class='btn' href="start.js?profile=4&compile=true">Start</a>
+      </div>
+      <div class='row'>
+        <h2>Original NON-Compiled</h2>
+        <div class='t'>Original Hunyuan Video Model</div>
+        <ol>
+          <li>If you want high quality results</li>
+          <li>But the "Original Compiled" option doesn't work</li>
+        </ol>
+        <a class='btn' href="start.js?profile=4">Start</a>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
