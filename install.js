@@ -33,35 +33,18 @@ module.exports = {
       params: {
         uri: "torch.js",
         params: {
-          venv: "env",                // Edit this to customize the venv folder path
-          path: "app",                // Edit this to customize the path to start the shell from
-          // xformers: true   // uncomment this line if your project requires xformers
+          venv: "env",
+          path: "app",
+          xformers: true
         }
       }
     },
-//    {
-//      method: "shell.run",
-//      params: {
-//        venv: "env",                // Edit this to customize the venv folder path
-//        path: "app",                // Edit this to customize the path to start the shell from
-//        message: [
-//          "uv pip install numpy==1.24.4"
-//        ]
-//      }
-//    },
     {
       method: 'input',
       params: {
         title: 'Installation completed',
         description: 'Click "Start" on the left sidebar to get started'
       }
-    },
-
-//    {
-//      method: "fs.link",
-//      params: {
-//        venv: "app/env"
-//      }
-//    },
+    }
   ]
 }
