@@ -1,4 +1,7 @@
 module.exports = {
+  requires: {
+    bundle: "ai"
+  },
   run: [
     {
       when: "{{gpu === 'amd' || platform === 'darwin'}}",
@@ -8,7 +11,6 @@ module.exports = {
       },
       next: null
     },
-    // Edit this step to customize the git repository to use
     {
       method: "shell.run",
       params: {
@@ -20,8 +22,8 @@ module.exports = {
     {
       method: "shell.run",
       params: {
-        venv: "env",                // Edit this to customize the venv folder path
-        path: "app",                // Edit this to customize the path to start the shell from
+        venv: "env",
+        path: "app",
         message: [
           "uv pip install -r requirements.txt",
           "uv pip install hf-xet"
@@ -43,7 +45,7 @@ module.exports = {
       method: 'input',
       params: {
         title: 'Installation completed',
-        description: 'Click "Start" on the left sidebar to get started'
+        description: 'Click "Start" to get started'
       }
     }
   ]
