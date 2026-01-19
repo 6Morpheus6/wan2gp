@@ -11,7 +11,6 @@ module.exports = {
           "uv pip install torch==2.9.1 torchvision==0.24.1 torchaudio==2.9.1 {{args && args.xformers ? 'xformers' : ''}} --index-url https://download.pytorch.org/whl/cu130 --force-reinstall --no-deps",
           'uv pip install "triton-windows<3.4"',
           "uv pip install https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post4/sageattention-2.2.0+cu130torch2.9.0andhigher.post4-cp39-abi3-win_amd64.whl",
-          "uv pip install https://github.com/Redtash1/Flash_Attention_2_Windows/releases/download/v2.7.0-v2.7.4/flash_attn-2.7.4.post1+cu128torch2.7.0cxx11abiFALSE-cp310-cp310-win_amd64.whl",
           "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/Light2xv/lightx2v_kernel-0.0.1+torch2.9.1-cp39-abi3-win_amd64.whl",
           "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/v1.2.0_Nunchaku/nunchaku-1.2.0+torch2.9-cp310-cp310-win_amd64.whl"
         ]
