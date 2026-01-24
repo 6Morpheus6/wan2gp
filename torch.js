@@ -27,7 +27,6 @@ module.exports = {
         "message": [
           "uv pip install torch==2.9.1 torchvision==0.24.1 torchaudio==2.9.1 {{args && args.xformers ? 'xformers' : ''}} --index-url https://download.pytorch.org/whl/cu130 --force-reinstall",
           'uv pip install ninja "triton<3.4"',
-          "uv pip install git+https://github.com/thu-ml/SageAttention.git --no-build-isolation",
           "uv pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.0/flash_attn-2.8.3+cu130torch2.9-cp310-cp310-linux_x86_64.whl",
           "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/Light2xv/lightx2v_kernel-0.0.1+torch2.9.1cu130-cp39-abi3-linux_x86_64.whl",
           "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/v1.2.0_Nunchaku/nunchaku-1.2.0+torch2.9-cp310-cp310-linux_x86_64.whl",
