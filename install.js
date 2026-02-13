@@ -25,7 +25,7 @@ module.exports = {
         venv: "env",
         path: "app",
         message: [
-          "uv pip install -r requirements.txt",
+          "uv pip install -r requirements.txt --index-strategy unsafe-best-match",
           "uv pip install hf-xet"
         ]
       }
