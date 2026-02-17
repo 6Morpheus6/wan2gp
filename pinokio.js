@@ -10,6 +10,7 @@ module.exports = {
       install: info.running("install.js"),
       start: info.running("start.js"),
       update: info.running("update.js"),
+      update2: info.running("update2.js"),
       reset: info.running("reset.js")
     }
     if (running.install) {
@@ -47,6 +48,13 @@ module.exports = {
           text: "Updating",
           href: "update.js",
         }]
+      } else if (running.update2) {
+        return [{
+          default: true,
+          icon: 'fa-solid fa-terminal',
+          text: "Updating python and torch",
+          href: "update2.js",
+        }]
       } else if (running.reset) {
         return [{
           default: true,
@@ -72,18 +80,18 @@ module.exports = {
           }]
         }, {
           icon: "fa-regular fa-folder-open",
-          text: "T2V Loras (save lora files here)",
+          text: "Save lora files here",
           href: "app/loras",
-          fs: true
-        }, {
-          icon: "fa-regular fa-folder-open",
-          text: "I2V Loras (save lora files here)",
-          href: "app/loras_i2v",
           fs: true
         }, {
           icon: "fa-solid fa-plug",
           text: "Update",
           href: "update.js",
+        }, {
+          icon: "fa-solid fa-plug",
+          text: "<div>Update<div>Python 3.11 / Pytorch 2.10</div></div>",
+          href: "update2.js",
+          confirm: "Are you sure you wish to upgrade to Python 3.11 and Pytorch 2.10?\nThis will delete the environment and create a new one with Python 3.11 and Pytorch 2.10\nYour settings and models will stay untouched."
         }, {
           icon: "fa-solid fa-plug",
           text: "Install",

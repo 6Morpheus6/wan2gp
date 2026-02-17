@@ -4,14 +4,6 @@ module.exports = {
   },
   run: [
     {
-      when: "{{gpu === 'amd' || platform === 'darwin'}}",
-      method: "notify",
-      params: {
-        html: "This app requires an NVIDIA GPU. Not compatible with AMD GPUs and macOS."
-      },
-      next: null
-    },
-    {
       method: "shell.run",
       params: {
         message: [
@@ -22,6 +14,7 @@ module.exports = {
     {
       method: "shell.run",
       params: {
+        venv_python: "3.11",
         venv: "env",
         path: "app",
         message: [
@@ -42,10 +35,9 @@ module.exports = {
       }
     },
     {
-      method: 'input',
+      method: "notify",
       params: {
-        title: 'Installation completed',
-        description: 'Click "Start" to get started'
+        html: "Installation completed"
       }
     }
   ]
