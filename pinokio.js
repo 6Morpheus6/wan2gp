@@ -52,7 +52,7 @@ module.exports = {
         return [{
           default: true,
           icon: 'fa-solid fa-terminal',
-          text: "Updating python and torch",
+          text: "Upgrading Python and Pytorch",
           href: "update2.js",
         }]
       } else if (running.reset) {
@@ -89,7 +89,7 @@ module.exports = {
           href: "update.js",
         }, {
           icon: "fa-solid fa-plug",
-          text: "<div>Update<div>Python 3.11 / Pytorch 2.10</div></div>",
+          text: "<div>Upgrade<div>Python 3.11 / Pytorch 2.10</div></div>",
           href: "update2.js",
           confirm: "Are you sure you wish to upgrade to Python 3.11 and Pytorch 2.10?\nThis will delete the environment and create a new one with Python 3.11 and Pytorch 2.10\nYour settings and models will stay untouched."
         }, {
