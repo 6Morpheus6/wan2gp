@@ -5,6 +5,7 @@ module.exports = {
       "when": "{{platform === 'win32' && gpu === 'nvidia' && kernel.gpu_model && / (10|16)\\d+/.test(kernel.gpu_model)}}",
       "method": "shell.run",
       "params": {
+        "venv_python": "{{args && args.venv_python ? args.venv_python : null}}",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
@@ -18,6 +19,7 @@ module.exports = {
       "when": "{{platform === 'win32' && gpu === 'nvidia' && kernel.gpu_model && / 20.+/.test(kernel.gpu_model)}}",
       "method": "shell.run",
       "params": {
+        "venv_python": "{{args && args.venv_python ? args.venv_python : null}}",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
@@ -33,6 +35,7 @@ module.exports = {
       "when": "{{platform === 'win32' && gpu === 'nvidia' && kernel.gpu_model && / 50.+/.test(kernel.gpu_model)}}",
       "method": "shell.run",
       "params": {
+        "venv_python": "{{args && args.venv_python ? args.venv_python : null}}",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
@@ -51,6 +54,7 @@ module.exports = {
       "when": "{{platform === 'win32' && gpu === 'nvidia'}}",
       "method": "shell.run",
       "params": {
+        "venv_python": "{{args && args.venv_python ? args.venv_python : null}}",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
@@ -68,6 +72,7 @@ module.exports = {
       "method": "shell.run",
       "params": {
         "env": { "UV_SKIP_WHEEL_FILENAME_CHECK": "1" },
+        "venv_python": "{{args && args.venv_python ? args.venv_python : null}}",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
@@ -83,6 +88,7 @@ module.exports = {
       "when": "{{platform === 'linux' && gpu === 'nvidia' && kernel.gpu_model && / (10|16)\\d+/.test(kernel.gpu_model)}}",
       "method": "shell.run",
       "params": {
+        "venv_python": "{{args && args.venv_python ? args.venv_python : null}}",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
@@ -97,6 +103,7 @@ module.exports = {
       "when": "{{platform === 'linux' && gpu === 'nvidia' && kernel.gpu_model && / 20.+/.test(kernel.gpu_model)}}",
       "method": "shell.run",
       "params": {
+        "venv_python": "{{args && args.venv_python ? args.venv_python : null}}",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
@@ -113,6 +120,7 @@ module.exports = {
       "when": "{{platform === 'linux'}}",
       "method": "shell.run",
       "params": {
+        "venv_python": "{{args && args.venv_python ? args.venv_python : null}}",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
@@ -132,6 +140,7 @@ module.exports = {
       "when": "{{platform === 'linux'}}",
       "method": "shell.run",
       "params": {
+        "venv_python": "{{args && args.venv_python ? args.venv_python : null}}",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
@@ -149,6 +158,7 @@ module.exports = {
       "when": "{{platform === 'linux' && gpu === 'amd'}}",
       "method": "shell.run",
       "params": {
+        "venv_python": "{{args && args.venv_python ? args.venv_python : null}}",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": "uv pip install torch==2.10.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm7.1 --force-reinstall --no-deps"
