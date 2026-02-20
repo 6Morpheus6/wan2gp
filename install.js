@@ -12,6 +12,17 @@ module.exports = {
       }
     },
     {
+      method: "script.start",
+      params: {
+        uri: "torch.js",
+        params: {
+          venv: "env",
+          path: "app",
+          xformers: true
+        }
+      }
+    },
+    {
       method: "shell.run",
       params: {
         venv_python: "3.11",
@@ -21,17 +32,6 @@ module.exports = {
           "uv pip install -r requirements.txt --index-strategy unsafe-best-match",
           "uv pip install hf-xet pip"
         ]
-      }
-    },
-    {
-      method: "script.start",
-      params: {
-        uri: "torch.js",
-        params: {
-          venv: "env",
-          path: "app",
-          xformers: true
-        }
       }
     },
     {
