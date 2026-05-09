@@ -18,7 +18,28 @@ module.exports = {
   }, {
     method: "script.start",
     params: {
-        uri: "install.js"
+      uri: "torch.js",
+      params: {
+        venv_python: "3.11",
+        venv: "env",
+        path: "app",
+        xformers: true
+      }
+    }
+  }, {
+    method: "shell.run",
+    params: {
+      venv: "env",
+      path: "app",
+      message: "uv pip install -r requirements.txt --index-strategy unsafe-best-match"
+    }
+  }, {
+    when: "{{platform === 'win32' && gpu === 'amd'}}",
+    method: "shell.run",
+    params: {
+      venv: "env",
+      path: "app",
+      message: "uv pip install numpy==1.26.4"
     }
   }]
 }
