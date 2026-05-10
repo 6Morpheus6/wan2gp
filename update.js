@@ -11,6 +11,17 @@ module.exports = {
       message: "git pull"
     }
   }, {
+    method: "script.start",
+    params: {
+      uri: "torch.js",
+      params: {
+        venv_python: "3.11",
+        venv: "env",
+        path: "app",
+        xformers: true
+      }
+    }
+  }, {
     method: "shell.run",
     params: {
       venv: "env",
