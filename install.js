@@ -4,6 +4,7 @@ module.exports = {
   },
   run: [
     {
+      when: "{{!exists('app')}}",
       method: "shell.run",
       params: {
         message: "git clone https://github.com/deepbeepmeep/Wan2GP app"
