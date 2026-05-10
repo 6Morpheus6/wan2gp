@@ -119,6 +119,7 @@ module.exports = {
           "uv pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0 {{args && args.xformers ? 'xformers==0.0.34' : ''}} --index-url https://download.pytorch.org/whl/cu130 --force-reinstall",
           "uv pip install -U triton",
           "uv pip install ../wheel/sageattention-2.2.0-cp311-cp311-linux_x86_64.whl",
+          "uv pip install ../wheel/spas_sage_attn-0.1.0-cp311-cp311-linux_x86_64.whl",
           "uv pip install numpy==2.1.2"
         ]
       },
@@ -137,6 +138,7 @@ module.exports = {
           "uv pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0 {{args && args.xformers ? 'xformers==0.0.34' : ''}} --index-url https://download.pytorch.org/whl/cu130 --force-reinstall",
           "uv pip install -U triton",
           "uv pip install ../wheel/sageattention-2.2.0-cp311-cp311-linux_x86_64.whl",
+          "uv pip install ../wheel/spas_sage_attn-0.1.0-cp311-cp311-linux_x86_64.whl",
           "uv pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.16/flash_attn-2.8.3+cu130torch2.10-cp311-cp311-linux_x86_64.whl",
           "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/Light2xv/lightx2v_kernel-0.0.2+torch2.10.0-cp311-abi3-linux_x86_64.whl",
           "uv pip install https://github.com/nunchaku-ai/nunchaku/releases/download/v1.2.1/nunchaku-1.2.1+cu13.0torch2.10-cp311-cp311-linux_x86_64.whl",
@@ -158,6 +160,7 @@ module.exports = {
           "uv pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0 {{args && args.xformers ? 'xformers==0.0.34' : ''}} --index-url https://download.pytorch.org/whl/cu130 --force-reinstall",
           "uv pip install -U triton",
           "uv pip install ../wheel/sageattention-2.2.0-cp311-cp311-linux_x86_64.whl",
+          "uv pip install ../wheel/spas_sage_attn-0.1.0-cp311-cp311-linux_x86_64.whl",
           "uv pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.16/flash_attn-2.8.3+cu130torch2.10-cp311-cp311-linux_x86_64.whl",
           "uv pip install numpy==2.1.2"
         ]
