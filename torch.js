@@ -179,6 +179,16 @@ module.exports = {
         "message": "uv pip install torch==2.10.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm7.1 --force-reinstall --no-deps"
       },
       "next": null
+    },
+    // apple silicon mac
+    {
+      "when": "{{platform === 'darwin' && arch === 'arm64'}}",
+      "method": "shell.run",
+      "params": {
+        "venv": "{{args && args.venv ? args.venv : null}}",
+        "path": "{{args && args.path ? args.path : '.'}}",
+        "message": "uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu --force-reinstall --no-deps"
+      }
     }
   ]
 }
