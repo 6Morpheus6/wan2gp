@@ -26,7 +26,10 @@ module.exports = {
     params: {
       venv: "env",
       path: "app",
-      message: "uv pip install -r requirements.txt --index-strategy unsafe-best-match"
+      message: [
+        "uv pip install -r requirements.txt --index-strategy unsafe-best-match",
+        "uv pip install comtypes"
+      ]
     }
   },
   {
