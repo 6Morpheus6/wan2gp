@@ -2,7 +2,15 @@ module.exports = {
   requires: {
     bundle: "ai"
   },
-  run: [
+  run: [{
+      when: "{{platform!== 'darwin' && vram < 6}}",
+      method: "input",
+      params: {
+        title: "Your system does not meet the minimum requirements for Wan2GP",
+        description: "You need a dedicated GPU with at least 6 GB VRAM and at least 16 GB System RAM to run Wan2GP." 
+      },
+      next: null
+    },
     {
       when: "{{!exists('app')}}",
       method: "shell.run",
