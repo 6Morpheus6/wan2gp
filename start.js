@@ -16,7 +16,7 @@ module.exports = async (kernel) => {
           },
           path: "app",
           message: [
-            "python wgp.py --multiple-images {{args.compile ? '--compile' : ''}}"
+            "python wgp.py --multiple-images --advanced {{args.compile ? '--compile' : ''}}"
           ],
           on: [{
             "event": "/http:\/\/[0-9.:]+/",   
