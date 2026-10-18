@@ -26,7 +26,7 @@ module.exports = {
           "uv pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0 {{args && args.xformers ? 'xformers==0.0.34' : ''}} --index-url https://download.pytorch.org/whl/cu130 --force-reinstall --no-deps",
           "uv pip install -U triton-windows",
           "uv pip install sageattention==1.0.6",
-          "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/gguf-v1.0.22/llamacpp_gguf_cuda-1.0.22%2Btorch210cu130py311-cp311-cp311-win_amd64.whl --no-deps",
+          "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/gguf-v1.0.26/llamacpp_gguf_cuda-1.0.26%2Btorch210cu130py311-cp311-cp311-win_amd64.whl --no-deps",
           "uv pip install https://github.com/woct0rdho/SpargeAttn/releases/download/v0.1.0-windows.post4/spas_sage_attn-0.1.0+cu130torch2.9.0andhigher.post4-cp39-abi3-win_amd64.whl",
           "uv pip install bitsandbytes==0.49.2 --no-deps"
         ]
@@ -48,7 +48,7 @@ module.exports = {
           "uv pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.13/flash_attn-2.8.3+cu130torch2.10-cp311-cp311-win_amd64.whl",
           "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/Light2xv/lightx2v_kernel-0.0.2+torch2.10.0-cp311-abi3-win_amd64.whl",
           "uv pip install https://github.com/nunchaku-ai/nunchaku/releases/download/v1.2.1/nunchaku-1.2.1+cu13.0torch2.10-cp311-cp311-win_amd64.whl",
-          "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/gguf-v1.0.22/llamacpp_gguf_cuda-1.0.22%2Btorch210cu130py311-cp311-cp311-win_amd64.whl --no-deps",
+          "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/gguf-v1.0.26/llamacpp_gguf_cuda-1.0.26%2Btorch210cu130py311-cp311-cp311-win_amd64.whl --no-deps",
           "uv pip install https://github.com/woct0rdho/SpargeAttn/releases/download/v0.1.0-windows.post4/spas_sage_attn-0.1.0+cu130torch2.9.0andhigher.post4-cp39-abi3-win_amd64.whl",
           "uv pip install bitsandbytes==0.49.2 --no-deps"
         ]
@@ -68,7 +68,7 @@ module.exports = {
           "uv pip install -U triton-windows",
           "uv pip install https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post4/sageattention-2.2.0+cu130torch2.9.0andhigher.post4-cp39-abi3-win_amd64.whl",
           "uv pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.13/flash_attn-2.8.3+cu130torch2.10-cp311-cp311-win_amd64.whl",
-          "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/gguf-v1.0.22/llamacpp_gguf_cuda-1.0.22%2Btorch210cu130py311-cp311-cp311-win_amd64.whl --no-deps",
+          "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/gguf-v1.0.26/llamacpp_gguf_cuda-1.0.26%2Btorch210cu130py311-cp311-cp311-win_amd64.whl --no-deps",
           "uv pip install https://github.com/woct0rdho/SpargeAttn/releases/download/v0.1.0-windows.post4/spas_sage_attn-0.1.0+cu130torch2.9.0andhigher.post4-cp39-abi3-win_amd64.whl",
           "uv pip install bitsandbytes==0.49.2 --no-deps"
         ]
@@ -121,7 +121,7 @@ module.exports = {
         "message": [
           "uv pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0 {{args && args.xformers ? 'xformers==0.0.34' : ''}} --index-url https://download.pytorch.org/whl/cu130 --force-reinstall",
           "uv pip install ../wheel/sageattention-2.2.0-cp311-cp311-linux_x86_64.whl",
-          "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/gguf-v1.0.22/llamacpp_gguf_cuda-1.0.22%2Btorch210cu130py311-cp311-cp311-linux_x86_64.whl --no-deps",
+          "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/gguf-v1.0.26/llamacpp_gguf_cuda-1.0.26%2Btorch210cu130py311-cp311-cp311-linux_x86_64.whl --no-deps",
           "uv pip install ../wheel/spas_sage_attn-0.1.0-cp311-cp311-linux_x86_64.whl",
           "uv pip install numpy==2.1.2",
           "uv pip install bitsandbytes==0.49.2 --no-deps"
@@ -143,7 +143,7 @@ module.exports = {
           "uv pip install ../wheel/sageattention-2.2.0-cp311-cp311-linux_x86_64.whl",
           "uv pip install ../wheel/spas_sage_attn-0.1.0-cp311-cp311-linux_x86_64.whl",
           "uv pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.16/flash_attn-2.8.3+cu130torch2.10-cp311-cp311-linux_x86_64.whl",
-          "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/gguf-v1.0.22/llamacpp_gguf_cuda-1.0.22%2Btorch210cu130py311-cp311-cp311-linux_x86_64.whl --no-deps",
+          "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/gguf-v1.0.26/llamacpp_gguf_cuda-1.0.26%2Btorch210cu130py311-cp311-cp311-linux_x86_64.whl --no-deps",
           "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/Light2xv/lightx2v_kernel-0.0.2+torch2.10.0-cp311-abi3-linux_x86_64.whl",
           "uv pip install https://github.com/nunchaku-ai/nunchaku/releases/download/v1.2.1/nunchaku-1.2.1+cu13.0torch2.10-cp311-cp311-linux_x86_64.whl",
           "uv pip install numpy==2.1.2",
@@ -166,7 +166,7 @@ module.exports = {
           "uv pip install ../wheel/sageattention-2.2.0-cp311-cp311-linux_x86_64.whl",
           "uv pip install ../wheel/spas_sage_attn-0.1.0-cp311-cp311-linux_x86_64.whl",
           "uv pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.16/flash_attn-2.8.3+cu130torch2.10-cp311-cp311-linux_x86_64.whl",
-          "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/gguf-v1.0.22/llamacpp_gguf_cuda-1.0.22%2Btorch210cu130py311-cp311-cp311-linux_x86_64.whl --no-deps",
+          "uv pip install https://github.com/deepbeepmeep/kernels/releases/download/gguf-v1.0.26/llamacpp_gguf_cuda-1.0.26%2Btorch210cu130py311-cp311-cp311-linux_x86_64.whl --no-deps",
           "uv pip install numpy==2.1.2",
           "uv pip install bitsandbytes==0.49.2 --no-deps"
         ]
