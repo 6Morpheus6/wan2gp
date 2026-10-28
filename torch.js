@@ -135,7 +135,7 @@ module.exports = {
     },
     // linux RTX50
     {
-      "when": "{{platform === 'linux'}}",
+      "when": "{{platform === 'linux' && gpu === 'nvidia' && kernel.gpu_model && / 50.+/.test(kernel.gpu_model)}}",
       "method": "shell.run",
       "params": {
         "bluefairy": "off",
@@ -159,7 +159,7 @@ module.exports = {
     },
     // linux RTX30 / RTX40
     {
-      "when": "{{platform === 'linux'}}",
+      "when": "{{platform === 'linux' && gpu === 'nvidia'}}",
       "method": "shell.run",
       "params": {
         "bluefairy": "off",
